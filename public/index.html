@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank MajuAI - Digital Banking</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Menggunakan Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://mustopa28121992.github.io/projectt/img/fox--md5--a9e377ae39495073d0e66db163fc8d9b.png" alt=""> Bank Maju<span>AI</span>
+    </div>
+    <div class="nav-links">
+      <a href="#">Beranda</a>
+      <a href="#">Layanan</a>
+      <a href="#">Tentang Kami</a>
+      <button id="theme-toggle" class="theme-btn" title="Ganti Tema">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Digital Bank -  Masa Depan Keuangan Anda</h1>
+      <p>Nikmati kemudahan transaksi finansial dengan keamanan tingkat tinggi dan dukungan AI cerdas 24/7.</p>
+      <button class="cta-btn" onclick="document.getElementById('chat-toggle-btn').click()">Buka Rekening MajuAI</button>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Aman & Terpercaya</h3>
+      <p>Sistem keamanan enkripsi end-to-end untuk melindungi aset Anda.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-bolt"></i>
+      <h3>Transaksi Cepat</h3>
+      <p>Kirim uang real-time ke seluruh dunia tanpa hambatan.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-robot"></i>
+      <h3>AI Support</h3>
+      <p>Asisten virtual MajuAI siap membantu Anda kapan saja.</p>
+    </div>
+  </section>
+
+  <!-- Chat Widget Floating -->
+  <button id="chat-toggle-btn" class="chat-toggle-btn">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+
+  <div id="chat-widget" class="chat-widget hidden">
+    <div class="chat-header">
+      <span><i class="fas fa-robot"></i> Sobat MajuAI</span>
+      <button id="chat-close-btn">&times;</button>
+    </div>
+    <div id="chat-box" class="chat-box"></div>
+    <form id="chat-form" class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Tulis pesan..." autocomplete="off" required />
+      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Bank MajuAI</h3>
+        <p>Mitra finansial cerdas untuk masa depan Anda. Nikmati kemudahan perbankan dengan teknologi AI terdepan yang Aman, Cepat, dan Terpercaya.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h3>Tautan Cepat</h3>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Hubungi Kami</h3>
+        <p><i class="fas fa-envelope"></i> support@majuai.com</p>
+        <p><i class="fas fa-phone-alt"></i> +62 21 5555 8888</p>
+        <p><i class="fas fa-map-marker-alt"></i> Menara MajuAI, Jakarta Selatan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Bank MajuAI. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--secondary-color);"></i> by Hacktiv8 Student
+    </div>
+  </footer>
+
+  <!-- Notification Sound -->
+  <audio id="notification-sound" src="https://www.soundjay.com/button/sounds/button-20.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
